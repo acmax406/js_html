@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> DOM examples</h2>
+    <div>
+        <p> This is the first paragraph on the page.</p>
+    </div>
+
+    <script>
+        var myTag = document.createElement('p');
+        document.write(myTag);
+
+        var myText = document.createTextNode('Here is a new paragraph');
+        myTag.appendChild(myText);
+        
+        var myDiv = document.querySelector('div');
+        myDiv.appendChild(myTag);
+
+    </script>
+    
+</body>
+</html>

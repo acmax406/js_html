@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1>DOM examples</h1>
+    <div id="special">
+        <p class = "someclass">this products are related to cats</p>
+        <p class ="someclass">This is a cat</p>
+        <p>This is a dog's contents</p>
+    </div>
+    <script>
+        var myText= document.querySelector('#special .someclass');
+        myText.style.color='red';
+    </script> -->
+    <!-- ================================================== -->
+    <h1>DOM examples</h1>
+    <div id="special">
+        <p class = "someclass">this products are related to cats</p>
+        <p class ="someclass">This is a cat</p>
+        <p>This is a dog's contents</p>
+    </div>
+    <script>
+        var myText= document.querySelectorAll('#special p');
+        for(var i =0;i<myText.length;i++)
+        {
+            myText[i].style.color = 'red';
+        }
+    </script>
+    
+</body>
+</html>

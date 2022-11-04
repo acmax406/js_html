@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> DOM examples </h1>
+    <div>
+        <p> this is the first paragraph </p>
+        <p> this is the second paragraph of page 2.</p>
+    </div>
+    <script>
+        // here it is selecting the div tab
+        var myDiv = document.querySelector('div');
+        // removing the div tab second paragraph element
+        myDiv.removeChild(myDiv.children[1])
+    </script>
+</body>
+</html>

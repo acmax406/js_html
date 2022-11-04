@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+    <script type="text/javascript">
+        // function pageresize()
+        // {
+        //     alert('sorry page not allowed to resize ')
+        // }
+        //=======================
+        // function textselect()
+        // {
+        //     alert("sorry text must not be blocked");
+        // }
+        //====================
+        function uppercase()
+        {
+            var x = document.getElementById('fname');
+            x.value = x.value.toUpperCase();
+        }
+        function lowercase()
+        {
+            var x = document.getElementById('lname');
+            x.value = x.value.toLowerCase();
+        }
+
+    </script>
+
+</head>
+<body onresize="pageresize()">
+    <!-- <p>resize the page and check the alert message...</p>
+    <p>Once the resize warning displayed successfully</p> -->
+    <!-- ============================== -->
+    <!-- <form>
+        <label>enter user name</label><br/>
+        <input type="text" name = 'fname' onselect="textselect()"><br/>
+        <input type="password" name ="pwd"><br/>
+    </form> -->
+    <!-- ===================================== -->
+    <form>
+        <label>enter name in lower case</label></br>
+        <input type="text" id ="fname" onblur="uppercase()" ><br/>
+        <label> enter name in upper case</label> <br/>
+        <input type="text" id="lname" onblur="lowercase()"><br/>
+    </form>
+
+
+</body>

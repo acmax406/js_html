@@ -1,0 +1,67 @@
+<!DOCTYPE html> 
+<head>
+     <script type ='text/javascript'>
+        // function alertmsg()
+        // {
+        //     alert("welcom to events");
+        //     alert("events are actions");
+        // }
+        // function mysysdate()
+        // {
+        //     document.getElementById('dt').innerHTML = Date();
+        // }
+    //=========================================================
+    // function image_load()
+    // {
+    //     alert("image Loaded successfully");
+    // }
+    //===========================================================
+    // function myimageerror()
+    // {
+    //     alert("image unable to load");
+    //     alert("image resource is not found");
+    // }
+    //============================================================
+    // function mouseover()
+    // {
+    //     alert('welcome to my page');
+    // }
+    // function mouseout()
+    // {
+    //     alert('visit again');
+    // }
+
+    function smallimage(x)
+    {
+        x.style.width = '30px';
+        x.style.height = '30px';
+    }
+    function bigimage(x)
+    {
+        x.style.height='100px';
+        x.style.width= '200px';
+    }
+    </script>
+</head>
+<body>
+    <!-- <p> click the button to display the alert message...</p>
+    <p id = 'dt'> click the button to displayt the system date and time</p>
+    <button onclick="mysysdate()">SysDateTime</button>
+    <br/>
+    <button onclick ='alertmsg()'>click_alert</button>
+    <br/>
+    <p>on double click you will get date and time</p>
+    <br/>
+    <button ondblclick="mysysdate()">sysDateTym</button> -->
+    <!-- ============================================================== -->
+    <!-- <p>Refresh the page and check it!</p>
+    <img src = 'xyu.png' width="200px" height="100px" onload="image_load()"> -->
+<!-- ============================================================================= -->
+    <!-- <img src = 'xyr.png' width="100px" height="200px" onerror="myimageerror()" 
+    alt="Sorry image resources is NotFound"/> -->
+<!-- ======================================================================================== -->
+    <!-- <div style="color: yellow;font-size:30px;font-family:tahoma" onmouseover="mouseover()"
+    onmouseout="mouseout()">!! MyWebPage !!</div> -->
+    <img src = 'xyz.png' width = '30px' height="30px" onmouseover="bigimage(this)" onmouseout="smallimage(this)">
+
+</body>

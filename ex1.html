@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class = 'red'>
+        <h1>Page Title</h1>
+        Some basice paragraph
+        <h2> Article Title</h2>
+    </div>
+    <div class ='date'>
+        <h3> Today's Date</h3>
+    </div>
+
+    <div class ='image'>
+        <img src ="http://meadpoint.net/images/xmasajax.jpg">
+    </div>
+
+    <p>Lorem ipsum dolor sit amet. conhss safaie sfdaihe
+        rwhoriuqwrwqrqr rhariw werwrw <u>where is the goat</u> werhao
+        fwohrweur.
+    </p>
+    &nbsp;&nbsp;&nbsp;&nbsp;<t> "you are braver thean ahiw fhoquwer
+        hwoeuraww whroawurew"</br>
+        &nbsp;&nbsp; &nbsp;&nbsp; -A.A.Milne </t>
+
+    <p>Lorem ipsum dolor sit amet. conhss safaie sfdaihe
+        rwhoriuqwrwqrqr rhariw werwrw <u>goat is here</u> werhao
+        fwohrweur.
+
+    </p>
+    
+
+    <script>
+        var myText = document.getElementsByTagName('p')
+        for(var i =0; i<myText.length;i++)
+        {
+            myText[i].style.color = " green ";
+
+        }
+        var myText2 = document.getElementsByTagName('u');
+        for(var i =0; i<myText2.length;i++)
+        {
+            myText2[i].style.color = " blue ";
+
+        }
+        var mainheading = document.querySelector('h1');
+        mainheading.style.color = "red";
+        var date = document.getElementsByClassName('date');
+        date[0].className='red';
+
+        var headingtext = document.getElementsByClassName('red');
+        headingtext[0].style.color = 'red';
+
+        var img = document.getElementsByClassName('image'); 
+        img.style.height = '10';
+        
+
+    </script>
+</body>
+</html>
